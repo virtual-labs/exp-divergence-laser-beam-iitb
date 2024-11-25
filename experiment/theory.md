@@ -1,1 +1,10 @@
-### Link your theory in here
+<p>Lasers are known for their incredibly focused beams of light. Ideally, a Laser would be perfectly parallel and focuses all its energy in a single spot. However, achieving this perfect parallelism in real-world situations is quite challenging. Laser also has the natural tendency for its beam to spread out, or diverge, with distance. This divergence weakens the beam's intensity as the laser source the farther it travels.
+</p>
+
+<p>In this experiment, a Helium-Neon (He-Ne) laser will be used. He-Ne laser has a wavelength of 632.8 nanometers (nm). The laser beam will be focused at a screen and measure the size of the spot it creates, denoted as d1 and a1 for the distance from the laser and the spot size, respectively. Then, we'll move the screen to a new position further away, d2, and record the new spot size, a2. This process will be repeated multiple times, with the screen being moved at consistent intervals. By taking measurements at different distances, we can create a table that shows the relationship between the screen's position and the corresponding size of the laser beam's spot. This data will allow us to calculate the actual divergence of our He-Ne laser.</p>
+
+<p>The light emitted by a laser is confined to a rather narrow cone. In principle, highly directional nature of a laser "Directionality "is the characteristic of laser light that causes it to travel in a single direction within a narrow cone of divergence. In reality, perfectly parallel beams of directional light, cannot be produced. All light beams diverge as they move through space. LASER is more highly collimated; it is more directional than the light from any source and thus less divergent. As the beam propagates outward, it slowly diverges or fans out. At the output aperture of the laser, the beam diameter is d. Its beam divergence angle is θ. 
+</p>
+
+
+$$ \theta = tan^{-1} \frac{(d_2 - d_1)}{(x_2 - x_1)} $$
