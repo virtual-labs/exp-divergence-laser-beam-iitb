@@ -1,0 +1,1 @@
+## To determine the divergence of Given Laser Beam

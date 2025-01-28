@@ -1,0 +1,47 @@
+[
+   {
+      "question": " How is the divergence angle of a laser beam measured practically?",
+      "qid": 1,
+      "option_a": "Using a ruler to measure the diameter of the laser at different distances",
+      "option_b": "Using a Michelson interferometer",
+      "option_c": "By calculating the change in intensity with distance",
+      "option_d": "Measuring the beam diameter at two points and calculating the angle",
+      "correct_option": "d"
+   },
+   {
+      "question": "What property of a laser changes as it diverges?",
+      "qid": 2,
+      "option_a": "Wavelength",
+      "option_b": "Intensity profile",
+      "option_c": "Coherence length",
+      "option_d": "Speed of light",
+      "correct_option": "b"
+   },
+   {
+      "question": "Which mathematical relationship is used to calculate the divergence angle (θ) in a laser experiment?",
+      "qid": 3,
+      "option_a": " &theta; = &lambda; / d",
+      "option_b": " &theta; ≈ (D1 - D2) / L, where D1 and D2 are diameters at two points and L is the distance between them",
+      "option_c": " &theta; = c / λ",
+      "option_d": "&theta; = I1 / I2",
+      "correct_option": "b"
+   },
+   {
+      "question": "What effect does the divergence of a laser beam have on its application in long-distance measurements?",
+      "qid": 4,
+      "option_a": "Improves precision",
+      "option_b": "Reduces beam coherence",
+      "option_c": "Reduces intensity at long distances",
+      "option_d": "Increases beam polarization",
+      "correct_option": "c"
+   },
+   {
+      "question": "Which of the following can minimize the divergence of a laser beam?",
+      "qid": 4,
+      "option_a": "Using a longer wavelength",
+      "option_b": "Passing the beam through a concave lens",
+      "option_c": "Using collimating optics",
+      "option_d": "Increasing the laser cavity length",
+      "correct_option": "c"
+   }
+]

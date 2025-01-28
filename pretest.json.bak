@@ -1,0 +1,47 @@
+[
+   {
+      "question": "What is the fundamental characteristic of a laser beam?",
+      "qid": 1,
+      "option_a": "Low coherence",
+      "option_b": "High divergence",
+      "option_c": "High coherence and low divergence",
+      "option_d": "Random polarization",
+      "correct_option": "c"
+   },
+   {
+      "question": "Which of the following defines the beam divergence of a laser?",
+      "qid": 2,
+      "option_a": "The angle over which the laser beam spreads",
+      "option_b": "The power output of the laser",
+      "option_c": "The wavelength of the laser",
+      "option_d": "The length of the laser cavity",
+      "correct_option": "a"
+   },
+   {
+      "question": "What is the SI unit for measuring the angle of divergence?",
+      "qid": 3,
+      "option_a": "Degrees",
+      "option_b": "Radians.",
+      "option_c": "Steradians",
+      "option_d": "Micrometers",
+      "correct_option": "b"
+   },
+   {
+      "question": "Why is a He-Ne laser commonly used in laboratory experiments?",
+      "qid": 4,
+      "option_a": "It is expensive",
+      "option_b": "It emits infrared light",
+      "option_c": "It has a stable output and emits visible light",
+      "option_d": "It has high power for cutting applications",
+      "correct_option": "c"
+   },
+   {
+      "question": "What component in a Michelson interferometer helps split the beam?",
+      "qid": 5,
+      "option_a": "Lens",
+      "option_b": "Beam Splitter",
+      "option_c": "Polarizer",
+      "option_d": "Filter",
+      "correct_option": "b"
+   }
+]
