@@ -1,1 +1,1 @@
-## Experiment name
+## To determine the divergence of Given Laser Beam
