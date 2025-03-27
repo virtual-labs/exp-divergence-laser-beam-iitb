@@ -23,7 +23,7 @@ function activity3() {
 		3
 	);
 
-	pp.showdescription(`<div style="background-color: #f4ccccff; border-radius: 10px; border: black; padding: 5%; font-weight: 500; font-size: 17px;">- Click the start button. <br> - start with x = 10 and d = 0. <br> - Vary the d step by step step <br> - Take the reading when maxima occurs by pressing record observation button <br> - After entering values in observation table for first row increase x by 10 <br> - Take readings for x = 10, 20, 30, 40 and 50. </div>` , 3);
+	pp.showdescription(`<div style="background-color: #f4ccccff; border-radius: 10px; border: black; padding: 5%; font-weight: 500; font-size: 14px;">- Click the start button. <br> - start with x = 10 and d = 0. <br> - Vary the d step by step step <br> - Take the reading when maxima occurs by pressing record observation button <br> - After entering values in observation table for first row increase x by 10 <br> - Take readings for x = 10, 20, 30, 40 and 50. <br> <span style='color: red;'> Note: Record Obeservtion button will be enabled near maxima only. Keep changing d unless it is green. </span> </div>` , 3);
 
 
 	var bsOffcanvas = new bootstrap.Offcanvas(
@@ -32,7 +32,7 @@ function activity3() {
 	bsOffcanvas.show();
 
 	let left_panel_text = `
-		<canvas id='gauss-plot' style='position: absolute; width: 28vw !important; border: black 1px solid; right:7vw; top: 5vw;'></canvas>
+		<canvas id='gauss-plot' style='position: absolute; width: 28vw !important; right:7vw; top: 5vw;'></canvas>
 
          <div id='act3-left-content' style="position: absolute; font-size: 1.6vw;">
 
@@ -93,7 +93,7 @@ function activity3() {
 
 
 				<div>
-					<span><button onclick='x_inc();' id='i-inc' ><i class="bi bi-caret-left-fill"></i></button></span>X<span><button onclick='x_dec();' id='i-dec' ><i class="bi bi-caret-right-fill"></i></button></span> <br>
+					<span><button onclick='x_dec();' id='i-inc' ><i class="bi bi-caret-left-fill"></i></button></span>X<span><button onclick='x_inc();' id='i-dec' ><i class="bi bi-caret-right-fill"></i></button></span> <br>
 					<span id='x-dsp'>X = ${x} cm</span>
 				</div>
 
@@ -141,9 +141,10 @@ function activity3() {
 	a2_windowresize();
 	//load_colors();
 
-	process_curve_data(0);
+	//process_curve_data(0);
 
 	window.addEventListener('click', (event) => a3_mouseclick(event));
+	MathJax.typeset();
 }
 
 function a3_mouseclick(e: MouseEvent) {
@@ -325,6 +326,7 @@ function x_inc() {
 
 // to decrease x value
 function x_dec() {
+	let laser_ele: HTMLImageElement = <HTMLImageElement> document.getElementById('laser-img');
 	if(x > 10) {
 		x -= 10;
 		for(let i=0; i<exp_data.length; i++) {
@@ -338,6 +340,7 @@ function x_dec() {
 		}
 		current_ele.value = (current * (1 + (Math.random()/100))).toFixed(3);
 		x_ele.innerText = x.toString() + ' cm';
+		laser_ele.style.marginLeft = `${30 + 20*(x/50)}vw`;
 	} else{
 		alert('You have reached to the minimum value of x');
 	}
@@ -346,7 +349,7 @@ function x_dec() {
 function check_maxima() {
 	let btn: HTMLButtonElement = <HTMLButtonElement> document.getElementById('record-btn');
 	let res: string = undefined;
-	process_curve_data(x);
+	//process_curve_data(x);
 	for(let i=0; i<exp_data.length; i++) {
 		
 		if(exp_data[i]['d'] == d) {
@@ -415,6 +418,10 @@ function record_observation() {
 
 	x1 = observation_table[observation_table.length - 1][1];
 	d1 = observation_table[observation_table.length - 1][3];
+
+	if(observation_table.length >= 5) {
+		process_curve_data(9);
+	}
 
 	var bsOffcanvas = new bootstrap.Offcanvas(
 		document.getElementById('offcanvasRight4')
