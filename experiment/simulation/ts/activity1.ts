@@ -1,5 +1,5 @@
 declare var bootstrap;
-
+declare var MathJax;
 var canvas: HTMLCanvasElement;
 var lscale: number = 2;
 var context: CanvasRenderingContext2D;
